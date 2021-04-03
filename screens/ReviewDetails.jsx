@@ -9,12 +9,12 @@ const ReviewDetails = ({ route }) => {
   return (
     <View style={globalStyles.container}>
       <Card>
-        <Text>{title}</Text>
+        <Text style={globalStyles.titleText}>{title}</Text>
+        <Text>{body}</Text>
         <View style={styles.rating}>
-          <Text>Rating:</Text>
+          <Text>Rating: </Text>
           <Image source={images.ratings[rating]} />
         </View>
-        <Text>{body}</Text>
       </Card>
     </View>
   )
@@ -23,5 +23,12 @@ const ReviewDetails = ({ route }) => {
 export default ReviewDetails
 
 const styles = StyleSheet.create({
-
+  rating: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    paddingTop: 16,
+    marginTop: 16,
+    borderTopWidth: 1,
+    borderTopColor: '#eee'
+  }
 })

@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 
-const MenuToggle = ({ navigation}) => {
+const MenuToggle = ({ navigation }) => {
 
   return (
     <MaterialIcons name="menu" size={28} onPress={() => { navigation.toggleDrawer() }} style={styles.icon} />
